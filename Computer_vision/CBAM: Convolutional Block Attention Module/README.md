@@ -6,4 +6,4 @@
 2. Spatial Attention Module (SAM).
 
 # CAM Equation:
-<img src="https://render.githubusercontent.com/render/math?math=x^2">
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
