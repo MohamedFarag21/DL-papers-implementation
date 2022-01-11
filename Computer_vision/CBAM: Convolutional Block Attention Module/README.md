@@ -7,6 +7,6 @@
 
 # CAM Equation:
 \begin{equation}
-...
+x = 3*x
 \end{equation}
 
