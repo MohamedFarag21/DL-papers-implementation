@@ -7,5 +7,5 @@
 
 # CAM Equation:
 
-\phi
+
 
