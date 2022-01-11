@@ -4,3 +4,6 @@
 
 1. Channel Attention Module (CAM).
 2. Spatial Attention Module (SAM).
+
+# CAM Equation:
+## $x^2$
