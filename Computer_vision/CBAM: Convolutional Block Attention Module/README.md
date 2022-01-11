@@ -7,6 +7,5 @@
 
 # CAM Equation:
 
-$x = 3+4$
-
+\phi
 
