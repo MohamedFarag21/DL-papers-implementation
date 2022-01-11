@@ -6,8 +6,7 @@
 2. Spatial Attention Module (SAM).
 
 # CAM Equation:
-$$\
-sum_{i=1}^n X_i
-$$
+
+$x = 3+4$
 
 
