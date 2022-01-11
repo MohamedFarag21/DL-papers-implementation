@@ -6,6 +6,7 @@
 2. Spatial Attention Module (SAM).
 
 # CAM Equation:
+\sum_{\forall i}{x_i^{2}}
 
 
 
