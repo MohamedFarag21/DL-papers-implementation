@@ -6,4 +6,6 @@
 2. Spatial Attention Module (SAM).
 
 # CAM Equation:
-## $`x^2`$
+```math
+SE = \frac{\sigma}{\sqrt{n}}
+```
