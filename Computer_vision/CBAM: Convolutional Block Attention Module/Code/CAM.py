@@ -1,5 +1,6 @@
 
 class cam(tf.keras.layers.Layer):
+    """"Channel Attention module as a layer"""
     def __init__(self, ratio, **kwargs):
 
 
