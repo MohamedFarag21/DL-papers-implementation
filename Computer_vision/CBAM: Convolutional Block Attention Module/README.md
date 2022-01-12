@@ -65,11 +65,11 @@ class cam(tf.keras.layers.Layer):
         config = super(cam, self).get_config()
         config.update({
         "ratio": self.ratio})
-        return config
-
-                
+        return config              
 ```
 
+# *Important*
+ I face a problem when i tried to create the weights without using *name* attribute at the `self.add_weight()`
 
 
 
