@@ -9,7 +9,7 @@
 
 # CAM code:
 
-```
+``
 class cam(tf.keras.layers.Layer):
     def __init__(self, ratio, **kwargs):
 
@@ -68,7 +68,7 @@ class cam(tf.keras.layers.Layer):
         return config
 
                 
-```
+``
 
 
 
