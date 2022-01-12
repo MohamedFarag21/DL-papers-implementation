@@ -8,7 +8,7 @@
 # CAM Equation:
 
 # CAM code:
-
+This implementation allows you to use it either in the `Functional` or in the `Sequential` models.
 ```
 class cam(tf.keras.layers.Layer):
     def __init__(self, ratio, **kwargs):
