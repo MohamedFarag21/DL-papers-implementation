@@ -9,7 +9,7 @@
 
 # CAM code:
 
-``
+```
 class cam(tf.keras.layers.Layer):
     def __init__(self, ratio, **kwargs):
 
@@ -42,7 +42,7 @@ class cam(tf.keras.layers.Layer):
         self.b2 = self.add_weight(shape = (input_shape[-1],), 
                                 initializer = tf.keras.initializers.he_normal(),
                                 trainable = True, name = 'bias_2')  
-      # super().build(input_shape)
+      
 
     def call(self, inputs):
         x1 = self.avgpool(inputs)    
@@ -68,7 +68,7 @@ class cam(tf.keras.layers.Layer):
         return config
 
                 
-``
+```
 
 
 
