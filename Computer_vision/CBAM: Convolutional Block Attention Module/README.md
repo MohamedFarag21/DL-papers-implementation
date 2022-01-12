@@ -14,7 +14,7 @@ class cam(tf.keras.layers.Layer):
     def __init__(self, ratio, **kwargs):
 
 
-        super(cam, self).__init__(name = 'cam',**kwargs)
+        super(cam, self).__init__(**kwargs)
 
         self.ratio = ratio
 
