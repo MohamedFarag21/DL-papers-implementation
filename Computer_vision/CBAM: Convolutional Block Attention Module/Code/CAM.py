@@ -17,6 +17,7 @@ class cam(tf.keras.layers.Layer):
         self.act2 = tf.keras.layers.Activation('sigmoid')
 
     def build(self, input_shape):
+        """The classes' method to intialize the weights of the network"""
         self.w1 = self.add_weight(shape = (input_shape[-1], input_shape[-1]//self.ratio), 
                                 initializer = tf.keras.initializers.he_normal(),  
                                 trainable = True, name='weights_1')  
@@ -35,6 +36,7 @@ class cam(tf.keras.layers.Layer):
       # super().build(input_shape)
 
     def call(self, inputs):
+        """A method that performs the computations related to CAM"""
         x1 = self.avgpool(inputs)    
         x2 = self.maxpool(inputs)
 
@@ -52,6 +54,7 @@ class cam(tf.keras.layers.Layer):
         return x
 
     def get_config(self):
+        """A method to enable serialization to be able to use it in Functional & Sequential models"""
         config = super(cam, self).get_config()
         config.update({
         "ratio": self.ratio})
