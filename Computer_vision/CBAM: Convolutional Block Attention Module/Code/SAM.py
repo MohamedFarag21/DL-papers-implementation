@@ -1,13 +1,13 @@
-class sp_att(tf.keras.layers.Layer):
+class SAM(tf.keras.layers.Layer):
 
   def __init__(self):
-      super(sp_att,self).__init__(name='Spatial_attention')
+      super(SAM, kernel_size, self).__init__(name='sam')
 
       # self.kernel_size = kernel_size
 
       self.concat = tf.keras.layers.Concatenate(axis=-1)
       self.conv   = tf.keras.layers.Conv2D(filters = 1, 
-                                           kernel_size=7, 
+                                           kernel_size=Kernel_size, 
                                            padding='same',  
                                            strides = 1, 
                                            activation = 'sigmoid',  
