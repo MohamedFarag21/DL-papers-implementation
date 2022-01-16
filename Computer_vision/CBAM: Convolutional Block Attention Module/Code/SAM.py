@@ -1,7 +1,7 @@
 class SAM(tf.keras.layers.Layer):
 
-  def __init__(self):
-      super(SAM, kernel_size, self).__init__(name='sam')
+  def __init__(self, kernel_size, **kwargs):
+      super(SAM, self).__init__(**kwargs)
 
       # self.kernel_size = kernel_size
 
