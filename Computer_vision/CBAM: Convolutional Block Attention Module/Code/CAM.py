@@ -1,10 +1,10 @@
 
-class cam(tf.keras.layers.Layer):
+class CAM(tf.keras.layers.Layer):
     """"Channel Attention module as a layer"""
     def __init__(self, ratio, **kwargs):
 
 
-        super(cam, self).__init__(**kwargs)
+        super(CAM, self).__init__(**kwargs)
 
         self.ratio = ratio
 
@@ -55,7 +55,7 @@ class cam(tf.keras.layers.Layer):
 
     def get_config(self):
         """A method to enable serialization to be able to use it in Functional & Sequential models"""
-        config = super(cam, self).get_config()
+        config = super(CAM, self).get_config()
         config.update({
         "ratio": self.ratio})
         return config
