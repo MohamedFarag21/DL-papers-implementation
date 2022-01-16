@@ -16,7 +16,7 @@ class SAM(tf.keras.layers.Layer):
                                            use_bias = False)
 
   def call(self,inputs):
-      """The classes' method to do computation"""
+       """A method that performs the computations related to SAM"""
       x11 = tf.reduce_mean(inputs ,axis=-1, keepdims =True)
       x22 = tf.reduce_max(inputs,axis=-1,keepdims  =True)
 
