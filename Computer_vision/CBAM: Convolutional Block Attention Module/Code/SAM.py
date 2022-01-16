@@ -27,7 +27,7 @@ class SAM(tf.keras.layers.Layer):
     
   def get_config(self):
       """A method to enable serialization to be able to use it in Functional & Sequential models"""
-      config = super(CAM, self).get_config()
+      config = super(SAM, self).get_config()
       config.update({
-      "ratio": self.ratio})
+      "kernel_size": self.kernel_size})
       return config
