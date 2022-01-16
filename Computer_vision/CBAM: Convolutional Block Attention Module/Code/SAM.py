@@ -1,4 +1,5 @@
 class SAM(tf.keras.layers.Layer):
+  'Spatial Attention module as a layer'
 
   def __init__(self, kernel_size, **kwargs):
       super(SAM, self).__init__(**kwargs)
