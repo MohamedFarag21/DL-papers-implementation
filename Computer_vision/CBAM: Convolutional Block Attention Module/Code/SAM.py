@@ -1,5 +1,5 @@
 class SAM(tf.keras.layers.Layer):
-  'Spatial Attention module as a layer'
+  """Spatial Attention module as a layer"""
 
   def __init__(self, kernel_size, **kwargs):
       super(SAM, self).__init__(**kwargs)
@@ -16,7 +16,7 @@ class SAM(tf.keras.layers.Layer):
                                            use_bias = False)
 
   def call(self,inputs):
-      
+      """The classes' method to do computation"""
       x11 = tf.reduce_mean(inputs ,axis=-1, keepdims =True)
       x22 = tf.reduce_max(inputs,axis=-1,keepdims  =True)
 
