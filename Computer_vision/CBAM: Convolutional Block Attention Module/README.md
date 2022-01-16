@@ -72,6 +72,15 @@ class cam(tf.keras.layers.Layer):
  I faced a problem when i tried to create the weights without using `name` attribute at the `self.add_weight()`, as if keras or tensorflow is saving the weights with special name, and if you tried to run your model and save it using these custom layers, you will face this error while saving `ValueError: Unable to create group (Name already exists)`. So the solution after searching was to name the weights and it worked for me, you can read about the solution here: https://issueexplorer.com/issue/keras-team/keras-io/720
  
  
+ # SAM code:
+This implementation allows you to use it either in the `Functional` or in the `Sequential` models.
+
+```
+
+```
+ 
+ 
+ 
 
 
 
