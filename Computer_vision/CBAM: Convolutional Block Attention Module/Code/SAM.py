@@ -24,3 +24,10 @@ class SAM(tf.keras.layers.Layer):
       x   = tf.keras.layers.multiply([x, inputs])
              
       return x
+    
+  def get_config(self):
+      """A method to enable serialization to be able to use it in Functional & Sequential models"""
+      config = super(CAM, self).get_config()
+      config.update({
+      "ratio": self.ratio})
+      return config
