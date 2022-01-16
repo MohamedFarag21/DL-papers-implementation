@@ -16,12 +16,12 @@ class sp_att(tf.keras.layers.Layer):
 
   def call(self,inputs):
       
-    x11 = tf.reduce_mean(inputs ,axis=-1, keepdims =True)
-    x22 = tf.reduce_max(inputs,axis=-1,keepdims  =True)
+      x11 = tf.reduce_mean(inputs ,axis=-1, keepdims =True)
+      x22 = tf.reduce_max(inputs,axis=-1,keepdims  =True)
 
-    x   = self.concat([x11, x22])
-    x   = self.conv(x)
-    x   = tf.keras.layers.multiply([x, inputs])
+      x   = self.concat([x11, x22])
+      x   = self.conv(x)
+      x   = tf.keras.layers.multiply([x, inputs])
 
     
 
