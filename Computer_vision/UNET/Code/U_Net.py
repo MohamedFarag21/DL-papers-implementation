@@ -1,5 +1,15 @@
 def unet(img_height, img_width, channels)
 
+  """
+  A function to build UNET architecture
+  
+  Args:   
+  img_height (int)
+  img_width (int)
+  channels (int)
+  
+  """
+
   inputs = tf.keras.layers.Input((img_height, img_width, channels))
 
   # Encoder part *************************************************************************************************************
