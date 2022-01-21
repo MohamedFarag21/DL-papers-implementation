@@ -9,4 +9,4 @@ I exploited UNET in my research during masters to segment retinal blood vessels.
 
 ### Details
 
-*It consists of two main blocks `encoder path (encoder)` & `decoding path (decoder)`.
+*It consists of two main blocks `encoder path (encoder)` & `decoding path (decoder)`*
