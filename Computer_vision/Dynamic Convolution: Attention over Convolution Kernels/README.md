@@ -1,1 +1,1 @@
-*$x+y$*
+Inline equation: $equation$
