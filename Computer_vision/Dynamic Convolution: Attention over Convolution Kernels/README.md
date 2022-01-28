@@ -1,1 +1,1 @@
-<img src="https://latex.codecogs.com/svg.image?\bg_green&space;\inline&space;\tilde{w}&space;=&space;\sum_{k}\pi(x)\tilde{w}_{k}&space;" title="\bg_green \inline \tilde{w} = \sum_{k}\pi(x)\tilde{w}_{k} " />
+\[\bg_green \inline \tilde{w} = \sum_{k}\pi(x)\tilde{w}_{k} \]
